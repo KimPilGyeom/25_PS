@@ -9,7 +9,7 @@ struct bmi_struct{
 
 void bmiResolve(struct bmi_struct* sp);
 
-int main(){
+int main(void){
     struct bmi_struct data;
     char bmi_string[5][20] = {"Underweight","Normal weight","Overweight","Mild obesity","Severe obesity"};
 
@@ -20,7 +20,7 @@ int main(){
 }
 
 void bmiResolve(struct bmi_struct* sp){
-    sp->bmi = sp->weight / (sp->height/100.0)*(sp->height/100.0);
+    sp->bmi = sp->weight / ((sp->height/100.0)*(sp->height/100.0));
 
    if (sp->bmi >= 30.0) {
         sp->bmi_level = 4;
