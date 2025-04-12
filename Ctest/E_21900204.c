@@ -14,7 +14,7 @@ typedef struct st_person {
     int year, month, day; 
 } PERSON;
 
-const char *monthnames[12] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+const char *monthnames[12] = {"Jan", "Feb", "Mwar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
 
 void setPerson(PERSON* p){
     p->year = p->birthdate / 10000;
